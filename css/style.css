@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+a.gabung {
+    width: 116px;
+    height: 44px;
+    left: 1115px;
+    top: 14px;
+    background: white;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row.beranda {
+    height: 768px;
+    margin-top: 0;
+}
+
+section#beranda.bg2 {
+    
+    background-image: url(/assets/hero_image.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.caption {
+    margin-top: 20vh;
+}
+
+a.lowongan {
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #FF512F 0%, #F09819 100%);
+    border-radius: 100px;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    color: bisque;
+}
+
+.row.content1 {
+    height: 480px;
+}
+
+.col-4 .card{
+    width: 338px;
+    height: 364px;
+    background: #FFFFFF;
+    /* card */
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
+.col-4 .card:hover{
+    background: #FE572E;
+    color: #FFFFFF;
+    transition: 0.5s;
+    /* card */
+}
+
+.col-4 .card span{
+   color:#FE572E;
+}
+
+.footer{
+    height: 440px;
+    background-image: url(/assets/wave.svg);
+    background-repeat: no-repeat;
+}
