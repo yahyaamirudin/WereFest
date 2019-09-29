@@ -1,41 +1,80 @@
-body {
-    margin: 0;
-    padding: 0;
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    margin: 0 auto;
+}
 
-a.gabung {
-    width: 116px;
-    height: 44px;
-    left: 1115px;
-    top: 14px;
-    background: white;
-    border-radius: 100px;
+/* navbar */
+.navbar-brand {
+    color: black !important;
     font-weight: bold;
 }
 
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+.nav-item a.gabung {
+    color: black !important;
+    font-weight: bold;
 }
 
-.row.beranda {
-    height: 768px;
-    margin-top: 0;
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus {
+    font-weight: bolder;
+    color: #FFFFFF
 }
 
-section#beranda.bg2 {
-    
+.backNav {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.trans {
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 300px) {
+    #navbarNav {
+        background: linear-gradient(90deg, #FF512F 0%, #F09819 100%);
+    }
+
+    .navbar-nav .nav-item .nav-link:hover,
+    .navbar-nav .nav-item .nav-link:focus {
+        font-weight: bolder;
+        color: #FFFFFF
+    }
+
+    .navbar-nav {
+        padding-left: 10px;
+    }
+}
+
+/* navbar */
+/* beranda */
+
+section#beranda {
     background-image: url(/assets/hero_image.svg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-size: cover;
 }
 
 .caption {
-    margin-top: 20vh;
+    padding-top: 240px;
+    padding-bottom: 240px;
+}
+
+.caption h1 {
+    font-size: 50px;
+}
+
+.caption h5 {
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 300px) {
+    .caption {
+        padding-top: 100px;
+        padding-bottom: 140px;
+    }
 }
 
 a.lowongan {
@@ -49,11 +88,44 @@ a.lowongan {
     color: bisque;
 }
 
+/* beranda */
+
+/* konten1 */
 .row.content1 {
-    height: 480px;
+    padding-top: 120px;
+    padding-bottom: 60px;
 }
 
-.col-4 .card{
+h1.content1 {
+    font-size: 60px;
+    padding-top: 60px;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 300px) {
+    .row.content1 {
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+
+    .row.content1.ribuan {
+        padding-top: 1px;
+        padding-bottom: 60px;
+    }
+}
+
+/* akhir konten1 */
+
+/* awal lowongan */
+
+.row.lowongan2 {
+    padding-bottom: 200px;
+}
+
+#lowongan .container {
+    padding-top: 100px;
+}
+
+.kolom .card {
     width: 338px;
     height: 364px;
     background: #FFFFFF;
@@ -62,18 +134,19 @@ a.lowongan {
     border-radius: 20px;
 }
 
-.col-4 .card:hover{
+.kolom .card:hover {
     background: #FE572E;
     color: #FFFFFF;
     transition: 0.5s;
     /* card */
 }
 
-.col-4 .card span{
-   color:#FE572E;
+.kolom .card span {
+    color: #FE572E;
 }
 
-.footer{
+/* akhir lowongan */
+.footer {
     height: 440px;
     background-image: url(/assets/wave.svg);
     background-repeat: no-repeat;
